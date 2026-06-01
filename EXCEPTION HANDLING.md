@@ -4,31 +4,46 @@
 ---
 
 ### AIM  
-To create a Python program that prompts the user for a list of grades separated by commas, splits the string into individual grades, and uses exception handling to inform the user if the values they entered cannot be converted to integers.
+To write a python code to check if the value given in age as input is negative and then  force the program to raise an exception using raise keyword.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Read a string `input_str` from the user using `input()`.  
-3. Split the input string using commas (`,`) to create a list of grades.  
-4. Use a `try` block to attempt converting each item in the grades list to an integer and store the result in `l1`.  
-5. If the conversion is successful, print the list `l1` containing the integer values.  
-6. If an error occurs during conversion (for example, if the input is not a valid number), catch the exception and print an error message: `"The grades you entered were in an invalid format."` along with the original grades list.  
-7. Terminate the program.
+1. Read input and convert to integer.
+2. Print the entered age.
+3. Check if age is less than 0; if so, raise `ValueError`.
+4. Calculate year of birth as `2022 - age`.
+5. Print year of birth or handle `ValueError`.
+
 
 ---
 
 ### PROGRAM
 
 ```
-Reg.No
-Name
-Add Your Code Here
+Reg.No: 212223060288
+Name: Tharun Kumaran G
+
+try:
+    age= int(input())
+    print("Age is:")
+    print(age)
+    if age<0:
+        raise ValueError("Input Correct age.")
+    yearOfBirth= 2022-age
+    print("Year of Birth is:")
+    print(yearOfBirth)
+except ValueError as ve:
+    print(ve)
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/f12c5b71-a9a7-401b-9f52-52fe2148bc03)
+
+
 ### RESULT
+
+Thus, the python program to check if the value given in age as input is negative and then  force the program to raise an exception using raise keyword has been executed and verified successfully.
