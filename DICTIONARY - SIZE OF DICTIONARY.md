@@ -4,33 +4,44 @@
 ---
 
 ### AIM  
-To write a Python program to print the size of a dictionary using `getsizeof()` from the `sys` module.
+To write a program to check whether a given key exists in a dictionary or not.
 
 ---
 
 ### ALGORITHM
 
-1. Begin the program.  
-2. Import the `sys` module to use the `getsizeof()` function.  
-3. Define the dictionaries with key-value pairs (`dic1`, `dic2`, `dic3`).  
-4. Use `sys.getsizeof()` to calculate the memory size of each dictionary.  
-5. Print the size of each dictionary in bytes.  
-6. Terminate the program.
+1.Create a dictionary dic with keys '0', '1', and '2' mapped to values 1, 2, and 3 respectively
+
+2.Input a value x from the user
+
+3.Check if x exists in the dictionary keys using x in dic.keys()
+
+4.If it exists, print "True"
+
+5.Else, print "False"
 
 ---
 
 ### PROGRAM
 
 ```
-#Reg.No
-#Name
-#Add Your Code Here
+#Reg.No: 212223060288
+#Name: Tharun Kumaran G
 
-
+dic={'0':1,'1':2,'2':3}
+x=input()
+if x in dic:
+    print("True")
+else:
+    print("False")
+    
 
 ```
 
 ### OUTPUT
 
+![image](https://github.com/user-attachments/assets/e8499a84-139d-4410-87d4-0fff52748353)
 
 ### RESULT
+
+Thus, the python program to check whether a given key exists in a dictionary or not has been executed and verified successfully.
