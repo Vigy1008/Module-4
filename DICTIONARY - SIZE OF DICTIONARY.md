@@ -1,47 +1,38 @@
-# Exp.No:16  
+# Exp.No:4b
 ## DICTIONARY - SIZE OF DICTIONARY
 
 ---
 
 ### AIM  
-To write a program to check whether a given key exists in a dictionary or not.
+To write a Python program to print the size of a dictionary using `getsizeof()` from the `sys` module.
 
 ---
 
 ### ALGORITHM
 
-1.Create a dictionary dic with keys '0', '1', and '2' mapped to values 1, 2, and 3 respectively
-
-2.Input a value x from the user
-
-3.Check if x exists in the dictionary keys using x in dic.keys()
-
-4.If it exists, print "True"
-
-5.Else, print "False"
+1. Begin the program.  
+2. Import the `sys` module to use the `getsizeof()` function.  
+3. Define the dictionaries with key-value pairs (`dic1`, `dic2`, `dic3`).  
+4. Use `sys.getsizeof()` to calculate the memory size of each dictionary.  
+5. Print the size of each dictionary in bytes.  
+6. Terminate the program.
 
 ---
 
 ### PROGRAM
 
-```
-#Reg.No: 212223060288
-#Name: Tharun Kumaran G
-
-dic={'0':1,'1':2,'2':3}
-x=input()
-if x in dic:
-    print("True")
-else:
-    print("False")
-    
-
+```python
+from sys import getsizeof
+dic1 = {"A": 1, "B": 2, "C": 3} 
+dic2 = {"Geek1": "Raju", "Geek2": "Nikhil", "Geek3": "Deepanshu"}
+dic3 = {1: "Lion", 2: "Tiger", 3: "Fox", 4: "Wolf"}
+print("Size of dic1: ",getsizeof(dic1),"bytes",sep="")
+print("Size of dic2: ",getsizeof(dic2),"bytes",sep="")
+print("Size of dic3: ",getsizeof(dic3),"bytes",sep="")
 ```
 
 ### OUTPUT
-
-![image](https://github.com/user-attachments/assets/e8499a84-139d-4410-87d4-0fff52748353)
+<img width="1183" height="238" alt="image" src="https://github.com/user-attachments/assets/3f9afc33-8041-4843-874b-305cb29a3143" />
 
 ### RESULT
-
-Thus, the python program to check whether a given key exists in a dictionary or not has been executed and verified successfully.
+Therefore, the output is the example to write a Python program to print the size of a dictionary using `getsizeof()` from the `sys` module.
